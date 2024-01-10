@@ -1,0 +1,47 @@
+// Coilhead.scss
+.soundboard-container {
+    padding: 20px;
+  
+    .sound-box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  
+      .sound-box {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 15px;
+        cursor: pointer;
+        background-color: #212121;
+        border: 2px solid white;
+        border-radius: 10px;
+  
+        p {
+          color: white;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    .microphone-buttons {
+      margin-top: 20px;
+  
+      button {
+        margin-right: 10px;
+        padding: 10px;
+      }
+    }
+  
+    // Media query for smaller screens
+    @media (max-width: 768px) {
+      .sound-box-container {
+        flex-direction: column;
+  
+        .sound-box {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
